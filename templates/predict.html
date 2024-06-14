@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Rent Prediction</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='predict.css') }}">
+</head>
+<body>
+    <div class="form-container">
+        <form action="/predict" method="post">
+            <div class="input-field">
+                <label for="area" class="input-label">Area:</label>
+                <input type="text" id="area" name="area" class="input-value" required>
+            </div>
+            <div class="input-field">
+                <label for="bedrooms" class="input-label">Bedrooms:</label>
+                <input type="text" id="bedrooms" name="bedrooms" class="input-value" required>
+            </div>
+            <div class="input-field">
+                <label for="bathrooms" class="input-label">Bathrooms:</label>
+                <input type="text" id="bathrooms" name="bathrooms" class="input-value" required>
+            </div>
+            <div class="input-field">
+                <label for="stories" class="input-label">Stories:</label>
+                <input type="text" id="stories" name="stories" class="input-value" required>
+            </div>
+            <div class="input-field">
+                <label for="mainroad" class="input-label">Main Road:</label>
+                <input type="text" id="mainroad" name="mainroad" class="input-value" required>
+            </div>
+            <div class="input-field">
+                <label for="guestroom" class="input-label">Guest Room:</label>
+                <input type="text" id="guestroom" name="guestroom" class="input-value" required>
+            </div>
+            <div class="input-field">
+                <label for="basement" class="input-label">Basement:</label>
+                <input type="text" id="basement" name="basement" class="input-value" required>
+            </div>
+            <div class="input-field">
+                <label for="hotwaterheating" class="input-label">Hot Water Heating:</label>
+                <input type="text" id="hotwaterheating" name="hotwaterheating" class="input-value" required>
+            </div>
+            <div class="input-field">
+                <label for="airconditioning" class="input-label">Air Conditioning:</label>
+                <input type="text" id="airconditioning" name="airconditioning" class="input-value" required>
+            </div>
+            <div class="input-field">
+                <label for="parking" class="input-label">Parking:</label>
+                <input type="text" id="parking" name="parking" class="input-value" required>
+            </div>
+            <div class="input-field">
+                <label for="furnishingstatus" class="input-label">Furnishing Status:</label>
+                <select id="furnishingstatus" name="furnishingstatus" class="input-value" required>
+                    <option value="unfurnished">Unfurnished</option>
+                    <option value="semi-furnished">Semi-Furnished</option>
+                    <option value="furnished">Furnished</option>
+                </select>
+            </div>
+            <button type="submit" class="calculate-btn">Calculate</button>
+        </form>
+    </div>
+</body>
+</html>
