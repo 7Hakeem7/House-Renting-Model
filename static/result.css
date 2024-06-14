@@ -1,0 +1,42 @@
+body {
+    background-color: #053545;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.result-container {
+    text-align: center;
+}
+
+.result-heading {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.predicted-price {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.go-back-link {
+    font-size: 18px;
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.go-back-link:hover {
+    background-color: #fff;
+    color: #053545;
+}
